@@ -14,10 +14,9 @@ export default function SignupPage() {
   return (
     <div>
       <div className="">
-        <div className="fixed mx-44"></div>
         <div className="flex items-center h-screen">
-          <div className="flex-1 flex items-center justify-center">
-            <div className="bg-white/5 rounded-2xl p-8 max-w-md w-full">
+          <div className="w-2/3">
+            <div className="dark:bg-white/5 bg-black/10 rounded-2xl p-8 w-2/4 mx-auto">
               <div className="text-center">
                 <h1 className="text-2xl font-bold mb-3">Sign up</h1>
                 <p className="text-gray-500 mb-8 text-sm">
@@ -49,6 +48,18 @@ export default function SignupPage() {
                   type="email"
                   id="email"
                   placeholder="siyam@example.com"
+                  className="w-full py-2 placeholder:text-sm"
+                />
+                <label
+                  htmlFor="phone"
+                  className="block text-gray-500 text-sm font-semibold"
+                >
+                  Phone
+                </label>
+                <Input
+                  type="phone"
+                  id="phone"
+                  placeholder="017XXXXXXXX"
                   className="w-full py-2 placeholder:text-sm"
                 />
 
@@ -123,13 +134,13 @@ export default function SignupPage() {
             </div>
           </div>
 
-          <div className="w-2/5">
+          <div className="">
             <Image
-              src="/phone.png"
+              src="/bgSlice.b9d8c29c.svg"
               alt="img"
-              width={1000}
+              width={1400}
               height={200}
-              className="rounded-xl h-[80vh] "
+              className=" "
             />
           </div>
         </div>

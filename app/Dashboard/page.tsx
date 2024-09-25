@@ -1,9 +1,15 @@
-import { title } from "@/components/primitives";
+
+import DashboardCards from "./Containers/DashboardCards";
+import DashboardLayout from "./layout";
 
 export default function DashboardPage() {
   return (
-    <div>
-      <h1 className="text-center text-6xl my-60 font-semibold h-screen">Dashboard</h1>
-    </div>
+    <DashboardLayout>
+      <div>
+        <div className="w-1/2">
+          <DashboardCards />
+        </div>
+      </div>
+    </DashboardLayout>
   );
 }

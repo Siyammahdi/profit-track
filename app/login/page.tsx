@@ -11,15 +11,15 @@ export default function LoginPage() {
 
   const toggleVisibility = () => setIsVisible(!isVisible);
 
-  const text = "Don't have an account?"
+  const text = "Don't have an account?";
 
   return (
     <div>
+
       <div className="">
-        <div className="fixed mx-44"></div>
         <div className="flex items-center h-screen">
-          <div className="flex-1 flex items-center justify-center">
-            <div className="bg-white/5 rounded-2xl p-8 max-w-md w-full">
+          <div className="w-2/3 ">
+            <div className="dark:bg-white/5 bg-black/10 rounded-2xl p-8 w-2/4 mx-auto">
               <div className="text-center">
                 <h1 className="text-2xl font-bold mb-3">Login</h1>
                 <p className="text-gray-500 mb-8 text-sm">
@@ -28,7 +28,6 @@ export default function LoginPage() {
               </div>
 
               <form className="mt-10">
-
                 <label
                   htmlFor="email"
                   className="block text-gray-500 text-sm font-semibold"
@@ -104,23 +103,23 @@ export default function LoginPage() {
               <p className="mt-6 text-sm text-gray-500 text-center">
                 {text}{" "}
                 <a
-                  href="/login"
+                  href="/signup"
                   className="text-primary text-sm hover:underline font-bold"
                 >
-                  Login
+                  SignUp
                 </a>
               </p>
             </div>
           </div>
 
-          <div className="w-2/5">
-            <Image
-              src="/phone.png"
-              alt="img"
-              width={1000}
-              height={200}
-              className="rounded-xl h-[80vh] "
-            />
+          <div className="">
+              <Image
+                src="/bgSlice.b9d8c29c.svg"
+                alt="img"
+                width={1400}
+                height={900}
+                className=" "
+              />
           </div>
         </div>
       </div>
